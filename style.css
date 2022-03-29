@@ -14,7 +14,16 @@ body {
     margin: auto;
 }
 .mapadiv path {
-    fill:  #e59866;
-    stroke:  #6e2c00;
+    fill: #e59866;
+    stroke: #6e2c00;
     stroke-width: 2px;
+}
+.mapadiv :hover {
+    fill: #f1c40f;
+}
+
+footer {
+    background-color: beige;
+    width: 100wh;
+    height: 100hw;
 }
