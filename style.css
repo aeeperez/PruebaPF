@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color:  #85c1e9 ;
+}
+.mapadiv {
+    width: 60%;
+    margin: auto;
+}
+.mapadiv path {
+    fill:  #e59866;
+    stroke:  #6e2c00;
+    stroke-width: 2px;
+}
