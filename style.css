@@ -1,3 +1,8 @@
+:root {
+    --primery-color: ;
+    --secundary-color: ;
+    --font-title: 4.5rem;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,9 +15,15 @@ html {
 body {
     background-color:  #C7D7D9 ;
 }
+.navul {
+    font-size: 2rem;
+    margin-right: 10px;
+    list-style: none;
+    padding-left: 0%;
+} 
 h1 {
     color: #260B01;
-    font-size: 2rem;
+    font-size: var(--font-title);
     padding: 10px;
 }
 .mapadiv {
@@ -30,6 +41,8 @@ h1 {
 
 footer {
     background-color: beige;
-    width: 100wh;
-    height: 100hw;
+    width: auto;
+    height: 20vh;
 }
+
+/*Estilos para paginas de los estados*/
