@@ -1,0 +1,122 @@
+:root {---titulo: #4b376b; ---subtitulo: #aa98ce; ---texto: #d164d9; ---colorxtra: #e8b5d0;}
+* {box-sizing: border-box; margin: 0; padding: 0;}
+html {font-size: 62.5%; background: lavenderblush; }
+body {font-family: 'Bebas Neue', cursive; font-family: 'Comfortaa', cursive; margin: 0; padding: 0px; background-color: lavenderblush; 
+display: flex; flex-direction: column; min-height: 100vh;}
+
+/*css barra menu*/
+#menu-bar {display: none;}
+header label {float: right; font-size: 28px; margin: 6px 0; cursor: pointer;}
+.menu {position:absolute; text-align: right; font-size: 1.5rem; top: 0px; left: 0px; width: 100%; height: 10px; padding: 20px;}
+.menu a {text-decoration: none; padding: 4px; margin: 6px; text-align: center;}
+.menu a:hover {background-color: var(---subtitulo); border-radius: 15px;}
+#menu-bar:checked ~ .menu {transform: translateX(0%);}
+
+.contenedor-menu {width: 100%; height: 100px; background: var(---subtitulo); position: fixed; top: 0; left: 0; z-index: 100; font-size: 1.5rem; border-bottom: 2px solid var(---titulo);}
+.menu-logo {height: 100px; padding-left: 60px;}
+
+
+/*css columnas*/
+.left-columna {float: left; width: 70%;}
+.right-columna {float: right; width: 30%;}
+
+/*css columna mapa*/
+.bienvenida {margin: 110px 0px 20px 0px; text-align: center; color: var(---titulo);}
+
+.bienvenida-uno {display:inline-block; position: relative; font-size: 2.7rem; color: var(---titulo);}
+.bienvenida-uno::after, .bienvenida-uno::before {content: ''; position:absolute; width: 100px; height: 3px; background-color: currentColor; top: 0.5em;}
+.bienvenida-uno::after {right: -120px;}
+.bienvenida-uno::before {left: -120px;}
+
+.bienvenida-dos {font-size: 1.8rem; color: var(---subtitulo);}
+.bienvenida-tres {font-size: 1.5rem; color: var(---subtitulo);}
+
+/*css mapa*/
+.mapadiv { width: auto; margin-top: 0px; display: flex; justify-content: center; align-items: center; padding: 0px;}
+.mapadiv path {fill: var(---subtitulo); stroke: var(---titulo); stroke-width: 2.5px;}
+.mapadiv :hover {fill: lavenderblush;}
+
+/*css columna blog*/
+.blog-p {display: inline-block; position: relative;  font-size: 2.7rem; color: var(---titulo); margin: 110px 200px 20px 200px; text-align: center;}
+.blog-p::after, .blog-p::before {content: ''; position:absolute; width: 100px; height: 3px; background-color: currentColor; top: 0.5em;}
+.blog-p::after {right: -120px;}
+.blog-p::before {left: -120px;}
+.blog-img-p {font-size: 1.5rem;}
+
+/*css blog noticias*/
+.blog1 {border: 4px solid lavender; padding: 6px; margin: 5px 0px 5px 0px; height: 170px;}
+.blog1-img {float: left;}
+.blog2 {border: 4px solid lavender; padding: 6px; margin: 5px 0px 5px 0px; height: 170px; }
+.blog2-img {float: left;}
+.blog3 {border: 4px solid lavender; padding: 6px; margin: 5px 0px 5px 0px; height: 170px; }
+.blog3-img {float: left;}
+.blog4 {border: 4px solid lavender; padding: 6px; margin: 5px 0px 5px 0px; height: 170px; }
+.blog4-img {float: left;}
+br {clear: both; height: 2px;}
+
+/*somos*/
+
+.somos-p {color: var(---titulo); margin: 120px; font-size: 1.5rem; text-align: justify;}
+
+/*vision*/
+.vision {color: var(---titulo); margin: 120px 120px 0px 120px; font-size: 2rem; text-align: center;}
+.vision-p {color: var(---titulo); margin: 20px 120px 0px 120px; font-size: 1.5rem; text-align: justify;}
+.vision-pdos {color: var(---titulo); margin: 20px 120px 0px 120px; font-size: 1.5rem; text-align: justify;}
+#texto1 {color: var(---titulo); margin: 40px 120px 0px 120px; font-size: 2rem;}
+
+/*mision*/
+.mision {color: var(---titulo); margin: 120px 120px 0px 120px; font-size: 2rem; text-align: center;}
+.mision-p {color: var(---titulo); margin: 20px 120px 0px 120px; font-size: 1.5rem; text-align: justify;}
+
+/*anunciate*/
+.anuncio {color: var(---titulo); margin: 120px 120px 0px 120px; font-size: 2rem; text-align: center;}
+.anuncio-p {color: var(---titulo); margin: 20px 120px 0px 120px; font-size: 1.5rem; text-align: justify;}
+
+/*contacto*/
+.contacto {color: var(---titulo); margin: 120px 120px 0px 120px; font-size: 2rem; text-align: center;}
+.contacto-p {color: var(---titulo); margin: 10px 120px 0px 120px; font-size: 1.5rem; text-align: justify;}
+.input-name {margin: 10px 20px 20px 120px; width: 250px; height: 30px; border-radius: 10px;}
+.input-cel {margin: 20px; width: 150px; height: 30px; border-radius: 10px;}
+.input-email {margin: 20px; width: 200px; height: 30px; border-radius: 10px;}
+.input-texto {margin: 20px 20px 20px 120px; width: 400px; height: 200px; border-radius: 10px;}
+
+
+/*5d*/
+.cincod {color: var(---titulo); margin: 120px 120px 0px 120px; font-size: 2rem; text-align: center;}
+.cincod-p {color: var(---titulo); margin: 20px 120px 0px 120px; font-size: 1.5rem; text-align: justify;}
+.cincod-lista {color: var(---titulo); margin: 20px 120px 10px 120px; font-size: 1.5rem; text-align: justify;}
+.contenedor-cincod li {margin: 10px;}
+
+/*corredores seguros*/
+.denuncia {color: var(---titulo); margin: 120px 120px 0px 120px; font-size: 2rem; text-align: center;}
+
+/*sitios para denuncias*/
+.denuncia {color: var(---titulo); margin: 120px 120px 0px 120px; font-size: 2rem; text-align: center;}
+.denuncia-title {color: var(---titulo); margin: 0px 120px 30px 120px; font-size: 1.5rem; text-align: center;}
+.denuncia-p {color: var(---titulo); margin: 15px 120px 0px 120px; font-size: 1.5rem; text-align: justify;}
+.denuncia-lista {color: var(---titulo); margin: 20px 120px 10px 150px; font-size: 1.5rem; text-align: justify;}
+
+.denuncia-lugares {color: var(---titulo); margin: 0px 0px 0px 120px; font-size: 1.5rem; text-align: justify;}
+.denuncia-lugares-p {color: var(---titulo); margin: 0px; font-size: 1.5px; text-align: justify;}
+.datos-nombre {color: var(---titulo); margin: 20px 0px 0px 0px; font-size: 1.5rem; text-align: justify;}
+.datos-direccion {color: var(---titulo); margin: 0px; font-size: 1.5rem; text-align: justify;}
+.datos-telefono {color: var(---titulo); margin: 0px; font-size: 1.5rem; text-align: justify;}
+.datos-horario {color: var(---titulo); margin: 0px; font-size: 1.5rem; text-align: justify;}
+
+/*recomendaciones viaje*/
+.recomendaciones {color: var(---titulo); margin: 120px 120px 0px 120px; font-size: 2rem; text-align: center;}
+.recomendaciones-p {color: var(---titulo); margin: 20px 120px 0px 120px; font-size: 1.5rem; text-align: justify;}
+.recomendaciones-lista {color: var(---titulo); margin: 20px 120px 0px 120px; font-size: 1.5rem; text-align: justify;}
+
+/*footer*/
+.footer {width: 100%; padding: 10px 0px; margin-top: 80px; background-color: var(---subtitulo); border-top: 2px solid var(---titulo); margin-top: auto;}
+.container_footer {display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; margin-top: 8px;}
+.box_footer {display: flex; flex-direction: column; padding: 10px; color: var(---titulo);}
+.box_footer-name {justify-content: center;}
+.box_footer h2 {color: var(---titulo); text-align: center; margin-bottom: 5px; font-weight: 700; max-width: 300px; }
+.box_footer a {margin-top: 10px; font-weight: 600; text-decoration: none;}
+.box_footer a:hover {opacity: 0.8;}
+.box_footer a .fab {font-size: 2rem; margin-bottom: 10px; max-width: 300px;}
+.box__copyright{max-width: 1200px; margin: auto; text-align: center; padding: 0px 40px;}
+.box__copyright p{ margin-top: 10px; color: var(---titulo);}
+.box__copyright hr{ border: none; height: 1px; background-color: var(---titulo);}
